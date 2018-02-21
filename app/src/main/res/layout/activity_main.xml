@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.craigsirota.mailnotifications.MainActivity">
+
+    <Button
+        android:id="@+id/contactSelect"
+        android:layout_width="100pt"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="contactsSelect"
+        android:text="Contact"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/letter"
+        android:layout_width="100pt"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:onClick="letterSend"
+        android:text="Letter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactSelect" />
+
+    <Button
+        android:id="@+id/Package"
+        android:layout_width="100pt"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="packageSend"
+        android:text="Package"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/letter" />
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactSelect"
+        tools:layout_editor_absoluteY="101dp" />
+</android.support.constraint.ConstraintLayout>
